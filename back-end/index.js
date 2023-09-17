@@ -10,6 +10,7 @@ const app = express()
 //middlewares
 app.use(express.json())
 app.use(cors())
+app.use('/authentication', require('./controllers/authentication'))
 
 //routes
 app.use('/profile',profileRoutes)

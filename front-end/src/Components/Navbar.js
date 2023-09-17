@@ -8,7 +8,7 @@ function Navigation() {
         <>
             <Navbar id='navbar' variant="light">
                 <Container>
-                    <img src=''/>
+                    <img src='./Images/lesbian-vibes.png'/>
                     <Navbar.Brand>Lesbian Vibes</Navbar.Brand>
                     <Nav className="me-auto" id='navbar-text'>
                         <Nav.Link href='/'>Home</Nav.Link>

@@ -1,10 +1,103 @@
+<p align="center">
+ <img width="100px" src="./front-end/public/favicon.ico" align="center" alt="Lesbians Vibes" />
+ <h2 align="center">Lesbians Vibes</h2>
+
+# Lesbians Vibes
+
 Lesbians Vibes is an app created a safe space for the Lesbians comminit in a way to be able to be yourself and enjoy the good vibes.
 
-Project members:
-Eric Bunn
-Fernanda Kennedy
-Skaya Mokma
-Kinsley Alexander
+## ✨ Requirements
+
+- Any Operating System (ie. MacOS X, Linux, Windows)
+- Internet Browser (ie. Google Chrome)
+- Source Code Editor (ie. VSCode)
+- MongoDb
+- npm (use npm run dev to intialize the project)
+
+# Project Plan
+
+- ✨ Overall idea
+  - Book API- Book sharing
+    - Home Page: Sign-up Form, Login Page
+      - Index Page
+      - Profile Show Page
+      - About Page (Future Implementation)
+    - Sign-up Form/Login Page:
+      - Profile Page and Favorites
+      - Search Bar Component found on most components
+- ✨ Name: Lesbians Vibes
+- ✨ Design/look
+  - Font: BlackMango (Font in logo, from Canva)
+  - Colors: https://upload.wikimedia.org/wikipedia/commons/3/35/Lesbian_Pride_Flag_2019.svg
+  <p align="center">
+  <img width="100px" src="./front-end/public/Lesbian_pride_flag_2018.svg.png" align="center" alt="Color Palette Ideas using Material UI" />
+   <h2 align="center">Color Palette Ideas using Material UI</h2>
+
+---
+
+### :hammer_and_wrench: Languages and Tools :
+
+- ✨ Front-end: React, Bootstrap
+- ✨ Back-end: Express, Node.js, Mongoose
+
+  - Packages: Express, NodeJS
+
+- ✨ Database: MongoDb
+
+## ✨ Future Tasks✨
+
+- Convert into TypeScript
+- Use SASS for styling
+- Adding more Web Accessibilty features
+
+## ✨ Resources:
+
+- Social Media app github examples
+  - https://github.com/nileshgulia1/React-bookstore
+  - https://github.com/topics/social-media-app?l=javascript
+  - https://github.com/rimijoker/Social-Media-App
+  - https://github.com/saifulshihab/view-book
+  - https://github.com/reedanna/pokemonbattlefrontier-frontend
+- Websites
+  - https://levelup.gitconnected.com/how-to-simultaneously-run-the-client-and-server-of-your-full-stack-app-in-one-folder-ef5a988d56d7
+  - https://www.freecodecamp.org/news/how-to-create-a-react-app-with-a-node-backend-the-complete-guide/
+  - https://www.npmjs.com/package/concurrently
+- Images
+  - https://www.canva.com/design/DAFNj2k4i2U/Z-lqpn8xDRfqPAp79ii_tw/view?utm_content=DAFNj2k4i2U&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
+- Github Version control/editing process
+  - https://uoftcoders.github.io/studyGroup/lessons/git/collaboration/lesson/
+
+## 👤 Author(s)
+
+- Eric Bunn: [@GR33NAP3](https://github.com/GR33NAP3)
+- Fernanda Kennedy: [@FernandaRKennedy](https://github.com/
+  FernandaRKennedy)
+- Kinsley Alexander: [@kins0803](https://github.com/kins0803)
+- Skaya Mokma: [@SkayaMokma](https://github.com/SkayaMokma)
+
+## 📝 License
+
+MIT License
+
+Copyright (c) 2023 Fernanda Kennedy
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 # Getting Started with Create React App
 

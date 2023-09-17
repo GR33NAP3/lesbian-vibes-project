@@ -1,8 +1,7 @@
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import "./styles.scss"
 
-function Home(){
+function Home() {
     return (
         <body>
         <img src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg" alt="lesbian flag art background" id="home-background"></img>

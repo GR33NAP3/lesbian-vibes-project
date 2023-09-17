@@ -4,7 +4,7 @@
 
 # Lesbians Vibes
 
-Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
+Lesbian Vibes is an app created a safe space for the Lesbian community in a way to be able to be yourself and enjoy the good vibes.
 
 ## ✨ Requirements
 

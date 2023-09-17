@@ -4,7 +4,7 @@
 
 # Lesbians Vibes
 
-Lesbians Vibes is an app created a safe space for the Lesbians comminit in a way to be able to be yourself and enjoy the good vibes.
+Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
 
 ## ✨ Requirements
 
@@ -22,7 +22,6 @@ Lesbians Vibes is an app created a safe space for the Lesbians comminit in a way
     - Search Bar Component found on most components
 - ✨ Name: Lesbians Vibes
 - ✨ Design/look
-  - Font: BlackMango (Font in logo, from Canva)
   - Colors: https://upload.wikimedia.org/wikipedia/commons/3/35/Lesbian_Pride_Flag_2019.svg
   <p align="center">
   <img width="100px" src="./front-end/public/Lesbian_pride_flag_2018.svg.png" align="center" alt="Color Palette Ideas using Material UI" />
@@ -42,14 +41,21 @@ Lesbians Vibes is an app created a safe space for the Lesbians comminit in a way
 ## ✨ Future Tasks✨
 
 - Convert into TypeScript
-- Use SASS for styling
 - Adding more Web Accessibilty features
 
 ## ✨ Resources:
 
 - Social Media app github examples
 
+  -
+  -
+  -
+
 - Websites
+
+  - https://react-bootstrap.netlify.app/
+  - https://www.w3schools.com/
+  -
 
 - Images
   - https://www.canva.com/design/DAFudo8dYUk/-rVKbfZ2TCEHRzI5OVICQw/view?utm_content=DAFudo8dYUk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview

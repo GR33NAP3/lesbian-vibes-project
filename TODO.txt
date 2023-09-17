@@ -2,7 +2,16 @@ TODO: Home page: Nav, profiles, pictures and match.
 TODO: Proifile settings: Navemail, age , basic informations and (Later pictures).
 TODO: Profile/Match: Nav, form: bio, secuality, age, pronouns, pictures, interest. 
 TODO: Sing in: Email, basic informations.
-TODO: Mesages(after the match work): all the text
-TODO: 
-TODO:
+TODO: Mesagens(after the match work): all the text
+
+
+fernanda will need for later 
+## Project Wireframe/Structure:
+
+<p align="center">
+<img width="100px" src="./backend/public/build/Table Relationships.jpg" align="center" alt="Relit Books Database Table Relationships" />
+ <h2 align="center">Relit Books Database Table Relationships</h2>
+ <p align="center">
+<img width="100px" src="./backend/public/build/Routes_Diagram.jpg" align="center" alt="Relit Books Views and Routes CRUD Diagram" />
+ <h2 align="center">Relit Books Views and Routes CRUD Diagram</h2>
 

@@ -4,10 +4,8 @@ import Home from "./Components/Home";
 import Explore from "./Components/Explore";
 import "./styles.scss"
 
-
 function App() {
   return (
-
     <div>
       <Router>
         <Navigation />
@@ -17,7 +15,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;

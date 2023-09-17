@@ -1,4 +1,8 @@
+skaya
+cd into front-end and run npm start
+
 Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
+
 
 # Getting Started with Create React App
 

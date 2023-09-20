@@ -1,10 +1,23 @@
 <p align="center">
  <img width="100px" src="./front-end/public/favicon.ico" align="center" alt="Lesbians Vibes" />
- <h2 align="center">Lesbians Vibes</h2>
+ <h2 align="center">Lesbian Vibes</h2>
 
 # Lesbians Vibes
 
+=========
 Lesbian Vibes is an app created a safe space for the Lesbian community in a way to be able to be yourself and enjoy the good vibes.
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+> > > > > > > > > Temporary merge branch 2
+
+Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
 
 ## ✨ Requirements
 
@@ -22,12 +35,18 @@ Lesbian Vibes is an app created a safe space for the Lesbian community in a way 
     - Search Bar Component found on most components
 - ✨ Name: Lesbians Vibes
 - ✨ Design/look
+  - Font: IBM Plex Mono (from Canva)
   - Colors: https://upload.wikimedia.org/wikipedia/commons/3/35/Lesbian_Pride_Flag_2019.svg
   <p align="center">
-  <img width="100px" src="./front-end/public/Lesbian_pride_flag_2018.svg.png" align="center" alt="Color Palette Ideas using Material UI" />
-   <h2 align="center">Color Palette Ideas using Material UI</h2>
+  <img width="100px" src="./front-end/public/Lesbian_pride_flag_2018.svg.png" align="center"
 
 ---
+
+## Project Wireframe/Structure:
+
+<p align="center">
+<img width="100px" src="./front-end/src/Components/Table_of_relationships.png" align="center" alt="Lesbian Vibes Database Table Relationships" />
+ <h2 align="center">Lesbian Vibes Database Table Relationships</h2>
 
 ### :hammer_and_wrench: Languages and Tools :
 
@@ -65,8 +84,7 @@ Lesbian Vibes is an app created a safe space for the Lesbian community in a way 
 ## 👤 Author(s)
 
 - Eric Bunn: [@GR33NAP3](https://github.com/GR33NAP3)
-- Fernanda Kennedy: [@FernandaRKennedy](https://github.com/
-  FernandaRKennedy)
+- Fernanda Kennedy: [@FernandaRKennedy](https://github.com/FernandaRKennedy)
 - Kinsley Alexander: [@kins0803](https://github.com/kins0803)
 - Skaya Mokma: [@SkayaMokma](https://github.com/SkayaMokma)
 

@@ -4,6 +4,19 @@
 
 # Lesbians Vibes
 
+=========
+Lesbian Vibes is an app created a safe space for the Lesbian community in a way to be able to be yourself and enjoy the good vibes.
+
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+> > > > > > > > > Temporary merge branch 2
+
 Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
 
 ## ✨ Requirements

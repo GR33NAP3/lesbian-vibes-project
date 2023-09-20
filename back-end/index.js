@@ -8,13 +8,22 @@ const profileRoutes = require("./routes/profile");
 const app = express();
 
 //middlewares
-app.use(express.json());
-app.use(cors());
+app.use(express.json())
+app.use(cors())
+app.use('/authentication', require('./controllers/authentication'))
+
+// serve static front end in production mode
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static(path.join(__dirname, 'client', 'build')));
+}
 
 //routes
 app.use("/profile", profileRoutes);
 
 const PORT = process.env.PORT || 8080;
+
+
+
 
 // db connection
 mongoose

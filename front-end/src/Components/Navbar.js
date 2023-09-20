@@ -23,6 +23,8 @@ function Navigation() {
           <Nav className="me-auto" id="navbar-text">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/">SignUp</Nav.Link>
+            <Nav.Link href='/matches'>Matches</Nav.Link>
+            <Nav.Link href='/explore'>Explore</Nav.Link>
           </Nav>
         </Container>
       </Navbar>

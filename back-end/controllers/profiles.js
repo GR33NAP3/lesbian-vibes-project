@@ -128,5 +128,10 @@ async function deleteProfileById(req, res) {
 }
 
 module.exports = {
-    getAllProfiles
+  getAllProfiles,
+  createProfile,
+  deleteProfileById,
+  updateProfileById,
+  getProfileByEmail,
+  getProfileById,
 }

@@ -43,4 +43,4 @@ try {
   console.log(`Unable to connect to PG: ${err}`) 
 }
 
-app.listen(PORT, console.log(`listining on port ${PORT}`));
+app.listen(PORT, console.log(`listening on port ${PORT}`));

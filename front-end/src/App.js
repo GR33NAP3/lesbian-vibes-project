@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navigation from "./Components/Navbar";
 import Home from "./Components/Home";
+import Profile from "./Components/Profile";
 import Explore from "./Components/Explore";
-import "./styles.scss";
-import Signup from "./Components/SignUp";
+import SignUp from "./Components/SignUp";
+import "./styles.scss"
+
 
 function App() {
   return (
@@ -12,8 +14,9 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/explore" element={<Explore />} />
-          <Route path="/signup" element={<Signup />} />
+          <Route path="/signUp" element={<SignUp />} />
         </Routes>
       </Router>
     </div>

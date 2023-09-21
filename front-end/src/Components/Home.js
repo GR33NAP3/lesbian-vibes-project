@@ -7,7 +7,8 @@ function Home() {
       <img
         src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
         alt="lesbian flag art background"
-      ></img>
+        className="home-background"
+      />
       <div id="log-in-form">
         <Form id="form">
           <h1>Lesbian Vibes</h1>

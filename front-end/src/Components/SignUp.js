@@ -7,7 +7,7 @@ import { FormGroup } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-const Signup = () => {
+const SignUp = () => {
   const Navigate = useNavigate();
   const [profileInput, setProfileInput] = useState({
     userName: "",
@@ -51,7 +51,9 @@ const Signup = () => {
   };
 
   return (
-    <div>
+    <body>
+    <img src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg" alt="lesbian flag art background" className="home-background"></img>
+    <div id="sign-up-form">
       <div>
         <h3>Sign Up</h3>
         {/* <Image
@@ -60,55 +62,53 @@ const Signup = () => {
           id="home-background"
         ></Image> */}
       </div>
+      <ul/>
       <Form onSubmit={handleSubmit}>
         <Row className="mb-3">
-          <FormGroup as={Col} xs={7} controlId="formGridName">
-            <Form.Label>Username</Form.Label>
+          <FormGroup controlId="formGridName">
             <Form.Control
               type="text"
               onChange={handleChange}
               name="userName"
-              placeholder="username"
+              placeholder="Username"
             />
 
-            <Form.Label>First Name</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               onChange={handleChange}
               name="firstName"
-              placeholder="FirstName"
+              placeholder="First Name"
             />
-
-            <Form.Label>Last Name</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               onChange={handleChange}
               name="lastName"
-              placeholder="LastName"
+              placeholder="Last Name"
             />
 
-            <Form.Label>Profile Picture URL</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="text"
               onChange={handleChange}
               name="profilePicture"
-              placeholder=""
+              placeholder="Profile Picture URL"
             />
           </FormGroup>
         </Row>
         <Row className="mb-3">
           <Form.Group as={Col} xs={7} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="email"
               onChange={handleChange}
               name="emailAddress"
-              placeholder="Enter email"
+              placeholder="Email"
             />
           </Form.Group>
-
           <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label>Password</Form.Label>
+            <Form.Label></Form.Label>
             <Form.Control
               type="password"
               secureTextEntry={true}
@@ -125,16 +125,17 @@ const Signup = () => {
             defaultChecked={profileInput.getsUpdates}
             name="getsUpdates"
             onChange={handleUpdateCheck}
-            label="Check to recieve updates"
+            label="Check to receive updates"
           />
         </Form.Group>
 
-        <Button variant="primary" type="submit">
+        <Button variant="outline-dark" type="submit">
           Submit
         </Button>
       </Form>
     </div>
+    </body>
   );
 };
 
-export default Signup;
+export default SignUp;

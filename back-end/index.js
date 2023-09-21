@@ -1,5 +1,6 @@
 const express = require("express");
 const cors = require("cors");
+const Sequelize = require('sequelize');
 require("dotenv").config();
 
 const profileRoutes = require("./routes/profile");

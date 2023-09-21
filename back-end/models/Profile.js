@@ -7,15 +7,35 @@ module.exports = (sequelize, DataTypes) => {
 
   };
   Profile.init({
-    ProfileId: {
-      type: DataTypes.SMALLINT,
+    user_id: {
+      type: DataTypes.INTEGER,
       primaryKey: true,
-      autoIncrement: true
-
+      allowNull: false
     },
-    firstName: DataTypes.STRING,
-    lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+    first_name: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    last_name: DataTypes.STRING,
+    bio: DataTypes.STRING,
+    intrest: DataTypes.STRING,
+    age: {
+        type: DataTypes.INTEGER,
+        allowNull: false
+    },
+    location: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    sexuality: {
+        type: DataTypes.STRING,
+        allowNull: false
+    },
+    pronouns: DataTypes.STRING,
+    intention: {
+        type: DataTypes.STRING,
+        allowNull: false
+    }
   }, {
     sequelize,
     underscored: true,

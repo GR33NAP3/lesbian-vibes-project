@@ -19,7 +19,7 @@ const Signup = () => {
   });
 
   //sets the url for profile creation
-  const URL = `${process.env.REACT_APP_BACKEND_URI}/profile`;
+  const URL = `${process.env.REACT_APP_BACKEND_URI}/singup`;
 
   //function to handle the change in the textboxes
   const handleChange = (e) => {
@@ -46,13 +46,18 @@ const Signup = () => {
       body: JSON.stringify(profileInput),
     });
     if (response.status !== 201) console.log("error");
-    Navigate(`/SignIn`);
+    Navigate(`/SignUp`);
   };
 
   return (
     <div>
       <div>
-        <h1>Sign Up</h1>
+        <h3>Sign Up</h3>
+        {/* <Image
+          src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
+          alt="lesbian flag art background"
+          id="home-background"
+        ></Image> */}
       </div>
       <Form onSubmit={handleSubmit}>
         <Row className="mb-3">
@@ -81,6 +86,13 @@ const Signup = () => {
               placeholder="LastName"
             />
 
+            <Form.Label>Birth Date</Form.Label>
+            <Form.Control
+              type="number"
+              onChange={handleChange}
+              name="birthday"
+              placeholder="Birthday"
+            />
             <Form.Label>Profile Picture URL</Form.Label>
             <Form.Control
               type="text"

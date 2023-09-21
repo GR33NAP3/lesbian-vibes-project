@@ -30,7 +30,7 @@ const Profile = () => {
   const display = profile && (
     <div style={{ margin: "auto" }}>
       <h1>{profile.userName}</h1>
-      <img src={profile.profilePicture} />
+      <img alt="profile" src={profile.profilePicture} />
       <p>{profile.emailAddress}</p>
       <div>
         <h4>

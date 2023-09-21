@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import Navigation from "./Components/Navbar"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navigation from "./Components/Navbar";
 import Home from "./Components/Home";
 import Profile from "./Components/Profile";
 import Explore from "./Components/Explore";
@@ -9,7 +9,6 @@ import "./styles.scss"
 
 function App() {
   return (
-
     <div>
       <Router>
         <Navigation />
@@ -21,7 +20,7 @@ function App() {
         </Routes>
       </Router>
     </div>
-  )
+  );
 }
 
 export default App;

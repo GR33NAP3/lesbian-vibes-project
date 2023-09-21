@@ -1,8 +1,11 @@
 TODO: Home page: Nav, profiles, pictures and match.
 TODO: Proifile settings: Navemail, age , basic informations and (Later pictures).
 TODO: Profile/Match: Nav, form: bio, secuality, age, pronouns, pictures, interest. 
-TODO: Sing in: Email, basic informations.
-TODO: Mesages(after the match work): all the text
-TODO: 
-TODO:
+TODO: Sign in: Email, basic informations.
+TODO: Mesagens(after the match work): all the text
 
+
+fernanda will need for later 
+ <p align="center">
+<img width="100px" src="./backend/public/build/Routes_Diagram.jpg" align="center" alt="Lesbian Vibes Views and Routes CRUD Diagram" />
+ <h2 align="center">Lesbian Vibes Views and Routes CRUD Diagram</h2>

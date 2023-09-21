@@ -6,7 +6,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 function Navigation() {
     return (
         <>
-            <Navbar id='navbar' variant="light">
+            <Navbar id='navbar' bg="dark" data-bs-theme="dark">
                 <Container>
                     <img src='./Images/lesbian-vibes.png'/>
                     <Navbar.Brand>Lesbian Vibes</Navbar.Brand>

@@ -1,0 +1,13 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "LESBIAN_CONNECT",
+            "Group": "GROUP_LESBIAN_VIBES",
+            "Host": "lesbian-vibes-alexanderkinsley405-42de.aivencloud.com",
+            "Port": 27379,
+            "MaintenanceDB": "defaultdb",
+            "Username": "avnadmin",
+            "SSLMode": "require"
+        }
+    }
+}

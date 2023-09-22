@@ -4,19 +4,6 @@
 
 # Lesbians Vibes
 
-=========
-Lesbian Vibes is an app created a safe space for the Lesbian community in a way to be able to be yourself and enjoy the good vibes.
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-> > > > > > > > > Temporary merge branch 2
-
 Lesbians Vibes is an app created a safe space for the Lesbians community in a way to be able to be yourself and enjoy the good vibes.
 
 ## ✨ Requirements
@@ -33,7 +20,7 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
   - Sign-up Form/Login Page:
     - Profile Page and Favorites
     - Search Bar Component found on most components
-- ✨ Name: Lesbians Vibes
+- ✨ Name: Lesbian Vibes
 - ✨ Design/look
   - Font: IBM Plex Mono (from Canva)
   - Colors: https://upload.wikimedia.org/wikipedia/commons/3/35/Lesbian_Pride_Flag_2019.svg
@@ -56,6 +43,7 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
   - Packages: Express, NodeJS
 
 - ✨ Database: PostgreSQL
+- ✨ Database: https://aiven.io/
 
 ## ✨ Future Tasks✨
 
@@ -66,15 +54,16 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
 
 - Social Media app github examples
 
-  -
+  - https://tinder.com/
   -
   -
 
 - Websites
 
+  - https://app.genmymodel.com/
   - https://react-bootstrap.netlify.app/
   - https://www.w3schools.com/
-  -
+  - https://www.postgresql.org/support/professional_hosting/northamerica/
 
 - Images
   - https://www.canva.com/design/DAFudo8dYUk/-rVKbfZ2TCEHRzI5OVICQw/view?utm_content=DAFudo8dYUk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview

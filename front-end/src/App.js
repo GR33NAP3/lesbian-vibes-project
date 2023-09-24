@@ -8,6 +8,7 @@ import Matches from "./Components/Matches";
 import "./styles.scss"
 
 
+
 function App() {
   return (
     <div>
@@ -15,10 +16,12 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/explore" element={<Explore />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/profile" element={<Profile />} />
           <Route path="/matches" element={<Matches />} />
+          <Route path="/explore" element={<Explore />} />
+          <Route path="/matches" element={<Matches />} />
+
         </Routes>
       </Router>
     </div>

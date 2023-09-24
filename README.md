@@ -43,6 +43,7 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
   - Packages: Express, NodeJS
 
 - ✨ Database: PostgreSQL
+- ✨ Database: https://aiven.io/
 
 ## ✨ Future Tasks✨
 

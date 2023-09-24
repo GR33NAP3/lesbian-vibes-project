@@ -31,7 +31,7 @@ const Profile = () => {
         <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pastel background"/>
     <div style={{ margin: "auto" }}>
       <h1>{profile.userName}</h1>
-      <img src={profile.profilePicture} alt="profile pic"/>
+      <img src={profile.profilePicture} alt="profile pic" />
       <p>{profile.emailAddress}</p>
       <div>
         <h4>

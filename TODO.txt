@@ -1,5 +1,5 @@
 TODO: Home page: Nav, profiles, pictures and match.
-TODO: Proifile settings: Navemail, age , basic informations and (Later pictures).
+TODO: Proifile settings: Nav email, age , basic informations and (Later pictures).
 TODO: Profile/Match: Nav, form: bio, secuality, age, pronouns, pictures, interest. 
 TODO: Sign in: Email, basic informations.
 TODO: Mesagens(after the match work): all the text

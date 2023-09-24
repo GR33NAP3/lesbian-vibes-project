@@ -6,32 +6,32 @@ import Image from "react-bootstrap/Image";
 import logo from "./nav.png";
 
 function Navigation() {
-    return (
-        <>
-            <Navbar id='navbar' bg="dark" data-bs-theme="dark">
-                <Container>
-                    <Image
-                        src={logo}
-                        style={{
-                        width: "30px",
-                        border: "1px solid #E8E9EB",
-                        marginTop: "0px",
-                        marginRight: "10px",
-                        marginBottom: "5px",
-                        }}
-                    />
-                    <Navbar.Brand>Lesbian Vibes</Navbar.Brand>
-                    <Nav className="me-auto" id='navbar-text'>
-                        <Nav.Link href='/'>Home</Nav.Link>
-                        <Nav.Link href="/signUp">Sign Up</Nav.Link>
-                        <Nav.Link href='/profile'>Profile</Nav.Link>
-                        <Nav.Link href='/matches'>Matches</Nav.Link>
-                        <Nav.Link href='/explore'>Explore</Nav.Link>
-                    </Nav>
-                </Container>
-            </Navbar>
-        </>
-    );
+  return (
+    <>
+      <Navbar id="navbar" bg="dark" data-bs-theme="dark">
+        <Container>
+          <Image
+            src={logo}
+            style={{
+              width: "30px",
+              border: "1px solid #E8E9EB",
+              marginTop: "0px",
+              marginRight: "10px",
+              marginBottom: "5px",
+            }}
+          />
+          <Navbar.Brand>Lesbian Vibes</Navbar.Brand>
+          <Nav className="me-auto" id="navbar-text">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/signUp">Sign Up</Nav.Link>
+            <Nav.Link href="/profile">Profile</Nav.Link>
+            <Nav.Link href="/matches">Matches</Nav.Link>
+            <Nav.Link href="/explore">Explore</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
 export default Navigation;

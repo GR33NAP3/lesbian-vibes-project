@@ -52,88 +52,95 @@ const SignUp = () => {
 
   return (
     <body>
-    <img src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg" alt="lesbian flag art background" className="home-background"></img>
-    <div id="sign-up-form">
-      <div>
-        <h3>Sign Up</h3>
-        {/* <Image
-          src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
-          alt="lesbian flag art background"
-          id="home-background"
-        ></Image> */}
+      <img
+        id="signup"
+        src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
+        alt="lesbian flag art background"
+        className="home-background"
+      ></img>
+      <div id="sign-up-form">
+        <div>
+          <h3>Sign Up</h3>
+        </div>
+        <ul />
+        <Form onSubmit={handleSubmit}>
+          <Row className="mb-3">
+            <FormGroup controlId="formGridName">
+              <Form.Control
+                type="text"
+                onChange={handleChange}
+                name="userName"
+                placeholder="Username"
+              />
+
+              <Form.Label></Form.Label>
+              <Form.Control
+                type="text"
+                onChange={handleChange}
+                name="firstName"
+                placeholder="First Name"
+              />
+              <Form.Label></Form.Label>
+              <Form.Control
+                type="text"
+                onChange={handleChange}
+                name="lastName"
+                placeholder="Last Name"
+              />
+
+              <Form.Label></Form.Label>
+              <Form.Control
+                type="date"
+                onChange={handleChange}
+                name="Birthday"
+                placeholder="Birthday"
+              />
+              <Form.Label>Profile Picture URL</Form.Label>
+              <Form.Control
+                type="text"
+                onChange={handleChange}
+                name="profilePicture"
+                placeholder="Profile Picture URL"
+              />
+            </FormGroup>
+          </Row>
+          <Row className="mb-3">
+            <Form.Group as={Col} xs={7} controlId="formGridEmail">
+              <Form.Label></Form.Label>
+              <Form.Control
+                type="email"
+                onChange={handleChange}
+                name="emailAddress"
+                placeholder="Email"
+              />
+            </Form.Group>
+            <Form.Group as={Col} controlId="formGridPassword">
+              <Form.Label></Form.Label>
+              <Form.Control
+                type="password"
+                secureTextEntry={true}
+                onChange={handleChange}
+                name="password"
+                placeholder="Password"
+              />
+            </Form.Group>
+          </Row>
+
+          <Form.Group className="mb-3" id="formGridCheckbox">
+            <Form.Check
+              type="checkbox"
+              defaultChecked={profileInput.getsUpdates}
+              name="getsUpdates"
+              onChange={handleUpdateCheck}
+              label="Check to receive updates"
+            />
+          </Form.Group>
+
+          <Button variant="outline-dark" type="submit">
+            Submit
+          </Button>
+        </Form>
       </div>
-      <ul/>
-      <Form onSubmit={handleSubmit}>
-        <Row className="mb-3">
-          <FormGroup controlId="formGridName">
-            <Form.Control
-              type="text"
-              onChange={handleChange}
-              name="userName"
-              placeholder="Username"
-            />
-
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="text"
-              onChange={handleChange}
-              name="firstName"
-              placeholder="First Name"
-            />
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="text"
-              onChange={handleChange}
-              name="lastName"
-              placeholder="Last Name"
-            />
-
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="text"
-              onChange={handleChange}
-              name="profilePicture"
-              placeholder="Profile Picture URL"
-            />
-          </FormGroup>
-        </Row>
-        <Row className="mb-3">
-          <Form.Group as={Col} xs={7} controlId="formGridEmail">
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="email"
-              onChange={handleChange}
-              name="emailAddress"
-              placeholder="Email"
-            />
-          </Form.Group>
-          <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label></Form.Label>
-            <Form.Control
-              type="password"
-              secureTextEntry={true}
-              onChange={handleChange}
-              name="password"
-              placeholder="Password"
-            />
-          </Form.Group>
-        </Row>
-
-        <Form.Group className="mb-3" id="formGridCheckbox">
-          <Form.Check
-            type="checkbox"
-            defaultChecked={profileInput.getsUpdates}
-            name="getsUpdates"
-            onChange={handleUpdateCheck}
-            label="Check to receive updates"
-          />
-        </Form.Group>
-
-        <Button variant="outline-dark" type="submit">
-          Submit
-        </Button>
-      </Form>
-    </div>
     </body>
   );
 };

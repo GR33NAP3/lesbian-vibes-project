@@ -4,6 +4,7 @@ import Home from "./Components/Home";
 import Profile from "./Components/Profile";
 import Explore from "./Components/Explore";
 import SignUp from "./Components/SignUp";
+import Matches from "./Components/Matches";
 import "./styles.scss"
 
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/explore" element={<Explore />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/matches" element={<Matches />} />
         </Routes>
       </Router>
     </div>

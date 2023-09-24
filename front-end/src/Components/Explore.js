@@ -10,6 +10,7 @@ function Explore() {
 
   return (
     <body>
+      <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pink background"/>
     <div id="explore-main">
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>

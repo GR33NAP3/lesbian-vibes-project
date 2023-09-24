@@ -1,4 +1,3 @@
-import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
@@ -28,6 +27,8 @@ const Profile = () => {
   };
 
   const display = profile && (
+    <body>
+        <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pastel background"/>
     <div style={{ margin: "auto" }}>
       <h1>{profile.userName}</h1>
       <img src={profile.profilePicture} alt="profile pic" />
@@ -41,6 +42,7 @@ const Profile = () => {
       <a href={`/Profile/update/${id}`}>Update</a>
       <button onClick={handleDelete}>Delete</button>
     </div>
+    </body>
   );
 
   return <div>{display}</div>;

@@ -38,6 +38,8 @@ function UpdateProfile() {
   };
 
   const display = profileInput && (
+    <body>
+    <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pastel background"/>
     <form onSubmit={handleSubmit}>
       <input
         required
@@ -51,7 +53,7 @@ function UpdateProfile() {
         onChange={handleChange}
         value={profileInput.firstName}
         name="firstName"
-        placeholder="Fist Name"
+        placeholder="First Name"
       />
       <input
         required
@@ -83,6 +85,7 @@ function UpdateProfile() {
       />
       <input type="submit" />
     </form>
+    </body>
   );
   return <div>{display}</div>;
 }

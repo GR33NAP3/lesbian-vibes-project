@@ -1,12 +1,12 @@
 const router = require('express').Router()
-const db = require("../models")
+const db = require("../models/Account")
 const bcrypt = require('bcrypt')
 const jwt = require('json-web-token')
 
-const { User } = db
+const { Account } = db
 
 router.post('/', async (req, res) => {
-    let user = await User.findOne({
+    let user = await Account.findOne({
         where: {email: req.body.email}
     })
   

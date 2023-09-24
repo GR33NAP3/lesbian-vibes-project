@@ -1,23 +1,13 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Matches extends Model {
+const mongoose = require("mongoose");
 
-  };
-  Matches.init({
-    match_id: {
-        type: DataTypes.INTEGER,
-        primaryKey: true,
-        allowNull: false
-    },
-    primary_match: DataTypes.INTEGER,
-    secondary_match: DataTypes.INTEGER,
-  }, {
-    sequelize,
-    underscored: true,
-    modelName: 'Matches',
-  });
-  return Matches;
-};
+const profileSchema = new mongoose.Schema({
+  matchId: {
+    type: Number,
+    primaryKey: true,
+    allowNull: false,
+  },
+  primary_match: Number,
+  secondary_match: Number,
+});
+
+module.exports = mongoose.model("Profile", profileSchema);

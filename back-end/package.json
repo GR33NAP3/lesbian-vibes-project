@@ -8,12 +8,8 @@
     "json-web-token": "^3.2.0",
     "method-override": "^3.0.0",
     "nodemon": "^3.0.1",
-    "pg": "^8.11.3",
-    "pg-hstore": "^2.3.4",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "sequelize": "^6.33.0",
-    "sequelize-cli": "^6.6.1"
+    "react-dom": "^18.2.0"
   },
   "name": "back-end",
   "version": "1.0.0",

@@ -1,41 +1,62 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Account extends Model {
+const mongoose = require("mongoose");
+const bcrypt = require("bcryptjs");
 
-    // static associate({ Comment }) {
-    //   Account.hasMany(Comment, { as: 'author', foreignKey: 'author_id' })
-    // }
+const profileSchema = new mongoose.Schema({
+  userId: {
+    type: Number,
+    allowNull: false,
+  },
+  password: {
+    type: String,
+    required: true,
+  },
+  firstName: {
+    type: String,
+    allowNull: false,
+  },
+  lastName: {
+    type: String,
+  },
+  birthday: {
+    type: Number,
+    allowNull: false,
+  },
+  email: {
+    type: String,
+    allowNull: false,
+    unique: true,
+  },
+});
+profileSchema.pre("save", function (next) {
+  const user = this;
 
-  };
-  Account.init({
-    user_id: {
-        type: DataTypes.INTEGER,
-        allowNull: false
-    },
-    password: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    first_name: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    last_name: DataTypes.STRING,
-    birthday: {
-        type: DataTypes.DATE,
-        allowNull: false
-    },
-    email: {
-        type: DataTypes.STRING,
-        allowNull: false
+  if (this.isModified("password") || this.isNew) {
+    bcrypt.genSalt(10, function (saltError, salt) {
+      if (saltError) {
+        return next(saltError);
+      } else {
+        bcrypt.hash(user.password, salt, function (hashError, hash) {
+          if (hashError) {
+            return next(hashError);
+          }
+
+          user.password = hash;
+          next();
+        });
+      }
+    });
+  } else {
+    return next();
+  }
+});
+
+profileSchema.methods.comparePassword = function (password, callback) {
+  bcrypt.compare(password, this.password, function (error, isMatch) {
+    if (error) {
+      return callback(error);
+    } else {
+      callback(null, isMatch);
     }
-  }, {
-    sequelize,
-    underscored: true,
-    modelName: 'Account',
   });
-  return Account;
 };
+module.exports = mongoose.model("Account", profileSchema);

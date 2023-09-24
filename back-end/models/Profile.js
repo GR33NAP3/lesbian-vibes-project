@@ -1,45 +1,44 @@
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class Profile extends Model {
+const mongoose = require("mongoose");
 
-  };
-  Profile.init({
-    user_id: {
-      type: DataTypes.INTEGER,
+const profileSchema = new mongoose.Schema(
+  {
+    userId: {
+      type: Number,
       primaryKey: true,
-      allowNull: false
+      allowNull: false,
     },
-    first_name: {
-        type: DataTypes.STRING,
-        allowNull: false
+    firstName: {
+      type: String,
+      allowNull: false,
     },
-    last_name: DataTypes.STRING,
-    bio: DataTypes.STRING,
-    intrest: DataTypes.STRING,
+    lastName: {
+      type: String,
+      allowNull: false,
+    },
+    bio: {
+      type: String,
+      allowNull: false,
+    },
+    intrest: {
+      type: String,
+      allowNull: false,
+    },
     age: {
-        type: DataTypes.INTEGER,
-        allowNull: false
+      type: String,
+      allowNull: false,
     },
     location: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: String,
+      allowNull: false,
     },
     sexuality: {
-        type: DataTypes.STRING,
-        allowNull: false
+      type: String,
+      allowNull: false,
     },
-    pronouns: DataTypes.STRING,
-    intention: {
-        type: DataTypes.STRING,
-        allowNull: false
-    }
-  }, {
-    sequelize,
-    underscored: true,
-    modelName: 'Profile',
-  });
-  return Profile;
-};
+  },
+  {
+    timestamps: true,
+  }
+);
+
+module.exports = mongoose.model("Profile", profileSchema);

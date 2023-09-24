@@ -4,8 +4,8 @@ import Home from "./Components/Home";
 import Profile from "./Components/Profile";
 import Explore from "./Components/Explore";
 import SignUp from "./Components/SignUp";
-import "./styles.scss"
-
+import "./styles.scss";
+import Matches from "./Components/Matches";
 
 function App() {
   return (
@@ -14,9 +14,10 @@ function App() {
         <Navigation />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/profile" element={<Profile />} />
-          <Route path="/explore" element={<Explore />} />
           <Route path="/signUp" element={<SignUp />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/matches" element={<Matches />} />
+          <Route path="/explore" element={<Explore />} />
         </Routes>
       </Router>
     </div>

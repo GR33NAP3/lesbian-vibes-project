@@ -2,6 +2,7 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
+import Image from "react-bootstrap/Image";
 import { FormGroup } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -52,6 +53,7 @@ const SignUp = () => {
   return (
     <body>
       <img
+        id="signup"
         src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
         alt="lesbian flag art background"
         className="home-background"
@@ -59,11 +61,6 @@ const SignUp = () => {
       <div id="sign-up-form">
         <div>
           <h3>Sign Up</h3>
-          {/* <Image
-          src="https://i.pinimg.com/originals/45/cd/30/45cd30de9f9bcc7ed78cbb83fe3d0e01.jpg"
-          alt="lesbian flag art background"
-          id="home-background"
-        ></Image> */}
         </div>
         <ul />
         <Form onSubmit={handleSubmit}>
@@ -93,10 +90,10 @@ const SignUp = () => {
 
               <Form.Label></Form.Label>
               <Form.Control
-                type="text"
+                type="date"
                 onChange={handleChange}
-                name="lastName"
-                placeholder="Last Name"
+                name="Birthday"
+                placeholder="Birthday"
               />
               <Form.Label>Profile Picture URL</Form.Label>
               <Form.Control

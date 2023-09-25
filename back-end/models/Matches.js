@@ -10,4 +10,4 @@ const profileSchema = new mongoose.Schema({
   secondary_match: Number,
 });
 
-module.exports = mongoose.model("Matches", profileSchema);
+module.exports = mongoose.model("Matches", MatchesSchema);

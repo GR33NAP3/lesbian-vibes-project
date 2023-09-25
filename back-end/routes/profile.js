@@ -7,7 +7,7 @@ const {
   updateProfileById,
 
   getProfileById,
-} = require("../controllers/profiles");
+} = require("../controllers/profile");
 
 //GET all profiles
 router.get("/explore", getAllProfiles);

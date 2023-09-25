@@ -1,4 +1,3 @@
-
 import React from "react";
 import { useState, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
@@ -29,21 +28,27 @@ function Matches() {
   };
 
   const display = matches && (
-    <div style={{ margin: "auto" }}>
-      <h1>{matches.userName}</h1>
-      <img src={matches.profilePicture} alt="profile pic" />
-      <p>{matches.emailAddress}</p>
-      <div>
-        <h4>
-          {matches.firstName} {matches.lastName}
-        </h4>
+    <body>
+      <img
+        src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg"
+        className="explore-background"
+        alt="pastel background"
+      />
+      <div style={{ margin: "auto" }}>
+        <h1>{matches.userName}</h1>
+        <img src={matches.profilePicture} alt="profile pic" />
+        <p>{matches.emailAddress}</p>
+        <div>
+          <h4>
+            {matches.firstName} {matches.lastName}
+          </h4>
+        </div>
+        <button onClick={handleDelete}>Delete</button>
       </div>
-      <button onClick={handleDelete}>Delete</button>
-    </div>
+    </body>
   );
 
   return <div>{display}</div>;
 }
 
 export default Matches;
-

@@ -5,7 +5,7 @@ require("dotenv").config();
 
 const ProfileRoutes = require("./routes/profile");
 const AccountRoutes = require("./routes/account");
-const MatchesRoutes = require("./routes/matches");
+// const MatchesRoutes = require("./routes/matches");
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.use("/authentication", require("./controllers/authentication"));
 //routes
 app.use("/profile", ProfileRoutes);
 app.use("/account", AccountRoutes);
-app.use("/matches", MatchesRoutes);
+// app.use("/matches", MatchesRoutes);
 
 // db connection
 mongoose
@@ -39,5 +39,3 @@ const PORT = process.env.PORT || 8080;
 app.listen(PORT, console.log(`listining on port ${PORT}`));
 
 module.exports = app;
-
-app.listen(PORT, console.log(`listening on port ${PORT}`));

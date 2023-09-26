@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const profileSchema = new mongoose.Schema({
+const MatchesSchema = new mongoose.Schema({
   matchId: {
     type: Number,
     primaryKey: true,

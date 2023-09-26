@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
 
-const profileSchema = new mongoose.Schema({
+const AccountSchema = new mongoose.Schema({
   userName: {
     type: String,
     allowNull: false,
@@ -32,7 +32,7 @@ const profileSchema = new mongoose.Schema({
       "https://upload.wikimedia.org/wikipedia/commons/b/b5/Windows_10_Default_Profile_Picture.svg",
   },
 });
-profileSchema.pre("save", function (next) {
+AccountSchema.pre("save", function (next) {
   const user = this;
 
   if (this.isModified("password") || this.isNew) {
@@ -55,7 +55,7 @@ profileSchema.pre("save", function (next) {
   }
 });
 
-profileSchema.methods.comparePassword = function (password, callback) {
+AccountSchema.methods.comparePassword = function (password, callback) {
   bcrypt.compare(password, this.password, function (error, isMatch) {
     if (error) {
       return callback(error);

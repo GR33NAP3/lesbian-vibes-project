@@ -27,23 +27,14 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
   <p align="center">
   <img width="100px" src="./front-end/public/Lesbian_pride_flag_2018.svg.png" align="center"
 
----
-
-## Project Wireframe/Structure:
-
-<p align="center">
-<img width="100px" src="./front-end/src/Components/Table_of_relationships.png" align="center" alt="Lesbian Vibes Database Table Relationships" />
- <h2 align="center">Lesbian Vibes Database Table Relationships</h2>
-
 ### :hammer_and_wrench: Languages and Tools :
 
 - ✨ Front-end: React, Bootstrap
-- ✨ Back-end: Express, Node.js, Postgres
+- ✨ Back-end: Express, Node.js, Mongoose
 
   - Packages: Express, NodeJS
 
-- ✨ Database: PostgreSQL
-- ✨ Database: https://aiven.io/
+- ✨ Database: MongoDb
 
 ## ✨ Future Tasks✨
 
@@ -55,15 +46,13 @@ Lesbians Vibes is an app created a safe space for the Lesbians community in a wa
 - Social Media app github examples
 
   - https://tinder.com/
-  -
-  -
 
 - Websites
 
-  - https://app.genmymodel.com/
+  -
+  - https://www.mongodb.com/
   - https://react-bootstrap.netlify.app/
   - https://www.w3schools.com/
-  - https://www.postgresql.org/support/professional_hosting/northamerica/
 
 - Images
   - https://www.canva.com/design/DAFudo8dYUk/-rVKbfZ2TCEHRzI5OVICQw/view?utm_content=DAFudo8dYUk&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink&mode=preview

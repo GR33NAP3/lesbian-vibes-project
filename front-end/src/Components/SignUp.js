@@ -14,12 +14,12 @@ const SignUp = () => {
     lastName: "",
     profilePicture: "",
     emailAddress: "",
-    getsUpdates: true,
+  
     password: "",
   });
 
   //sets the url for profile creation
-  const URL = `${process.env.REACT_APP_BACKEND_URI}/account/signup`;
+  const URL = `${process.env.REACT_APP_BACKEND_URI}/account`;
 
   //function to handle the change in the textboxes
   const handleChange = (e) => {
@@ -46,7 +46,7 @@ const SignUp = () => {
       body: JSON.stringify(profileInput),
     });
     if (response.status !== 201) console.log("error");
-    Navigate(`/SignUp`);
+    Navigate(`/`);
   };
 
   return (
@@ -91,10 +91,10 @@ const SignUp = () => {
               <Form.Control
                 type="date"
                 onChange={handleChange}
-                name="Birthday"
+                name="birthday"
                 placeholder="Birthday"
               />
-              <Form.Label>Profile Picture URL</Form.Label>
+              <Form.Label></Form.Label>
               <Form.Control
                 type="text"
                 onChange={handleChange}

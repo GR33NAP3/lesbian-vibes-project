@@ -5,12 +5,12 @@ const {
   createProfile,
   deleteProfileById,
   updateProfileById,
-  getProfileByEmail,
+
   getProfileById,
-} = require("../controllers/profiles");
+} = require("../controllers/profile");
 
 //GET all profiles
-router.get("/", getAllProfiles);
+router.get("/explore", getAllProfiles);
 
 //GET one profile
 router.get("/:id", getProfileById);

@@ -19,7 +19,7 @@ const SignUp = () => {
   });
 
   //sets the url for profile creation
-  const URL = `${process.env.REACT_APP_BACKEND_URI}/account/signup`;
+  const URL = `${process.env.REACT_APP_BACKEND_URI}/account`;
 
   //function to handle the change in the textboxes
   const handleChange = (e) => {

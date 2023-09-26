@@ -3,16 +3,16 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const Profile = () => {
   const navigate = useNavigate();
-  const [profile, setProfile] = useState(undefined);
+  const [account, setAccount] = useState(undefined);
 
   const { id } = useParams();
-  const URL = `${process.env.REACT_APP_BACKEND_URI}/profile/${id}`;
+  const URL = `${process.env.REACT_APP_BACKEND_URI}/account/${id}`;
 
   useEffect(() => {
     const fetchData = async () => {
       const response = await fetch(URL);
       const data = await response.json();
-      setProfile(data);
+      setAccount(data);
     };
     fetchData();
   }, [id, URL]);
@@ -26,23 +26,26 @@ const Profile = () => {
     navigate("/");
   };
 
-  const display = profile && (
-    <body>
-        <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pastel background"/>
-    <div style={{ margin: "auto" }}>
-      <h1>{profile.userName}</h1>
-      <img src={profile.profilePicture} alt="profile pic" />
-      <p>{profile.emailAddress}</p>
-      <div>
-        <h4>
-          {profile.firstName} {profile.lastName}
-        </h4>
+  const display = account && (
+    <div>
+      <img
+        src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg"
+        className="explore-background"
+        alt="pastel background"
+      />
+      <div style={{ margin: "auto" }}>
+        <h1>{account.userName}</h1>
+        <img src={account.profilePicture} alt="profile pic" />
+        <p>{account.emailAddress}</p>
+        <div>
+          <h4>
+            {account.firstName} {account.lastName}
+          </h4>
+        </div>
+        <a href={`/Profile/update/${id}`}>Update</a>
+        <button onClick={handleDelete}>Delete</button>
       </div>
-
-      <a href={`/Profile/update/${id}`}>Update</a>
-      <button onClick={handleDelete}>Delete</button>
     </div>
-    </body>
   );
 
   return <div>{display}</div>;

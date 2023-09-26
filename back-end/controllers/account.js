@@ -59,10 +59,21 @@ async function getAccountByEmail(req, res) {
     res.json({ message: "error fetching account" });
   }
 }
-
+//GETs account by id for finding a match
+async function getAccountById(req, res) {
+  try {
+    const { id } = req.params;
+    const account = await Account.findById(id);
+    res.json(account);
+  } catch (error) {
+    console.log("error finding this Account");
+    res.json({ message: "error finding this Account" });
+  }
+}
 module.exports = {
   createAccount,
   deleteAccountById,
   updateAccountById,
   getAccountByEmail,
+  getAccountById,
 };

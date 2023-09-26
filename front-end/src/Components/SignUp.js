@@ -13,8 +13,8 @@ const SignUp = () => {
     firstName: "",
     lastName: "",
     profilePicture: "",
-    emailAddress: "",
-    getsUpdates: true,
+    email: "",
+    age: "",
     password: "",
   });
 
@@ -39,6 +39,7 @@ const SignUp = () => {
   };
   //handles the submit to create the profile in the database
   const handleSubmit = async (e) => {
+    e.preventDefault();
     console.log(profileInput);
     const response = await fetch(URL, {
       method: "POST",
@@ -46,7 +47,7 @@ const SignUp = () => {
       body: JSON.stringify(profileInput),
     });
     if (response.status !== 201) console.log("error");
-    Navigate(`/SignIp`);
+    Navigate(`/profile`);
   };
 
   return (

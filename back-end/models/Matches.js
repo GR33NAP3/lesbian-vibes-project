@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const profileSchema = new mongoose.Schema({
+const matchesSchema = new mongoose.Schema({
   matchId: {
     type: Number,
     primaryKey: true,
@@ -10,4 +10,4 @@ const profileSchema = new mongoose.Schema({
   secondary_match: Number,
 });
 
-module.exports = mongoose.model("Profile", profileSchema);
+module.exports = mongoose.model("Matches", matchesSchema);

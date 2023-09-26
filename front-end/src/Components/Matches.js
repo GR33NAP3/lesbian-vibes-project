@@ -29,6 +29,8 @@ function Matches() {
   };
 
   const display = matches && (
+    <body>
+     <img src="https://cdn.wallpapersafari.com/93/97/Uv8wKu.jpg" className="explore-background" alt="pastel background"/>
     <div style={{ margin: "auto" }}>
       <h1>{matches.userName}</h1>
       <img src={matches.profilePicture} alt="profile pic" />
@@ -40,6 +42,7 @@ function Matches() {
       </div>
       <button onClick={handleDelete}>Delete</button>
     </div>
+    </body>
   );
 
   return <div>{display}</div>;

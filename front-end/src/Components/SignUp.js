@@ -2,7 +2,6 @@ import Col from "react-bootstrap/Col";
 import Form from "react-bootstrap/Form";
 import Row from "react-bootstrap/Row";
 import Button from "react-bootstrap/Button";
-import Image from "react-bootstrap/Image";
 import { FormGroup } from "react-bootstrap";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -20,7 +19,7 @@ const SignUp = () => {
   });
 
   //sets the url for profile creation
-  const URL = `${process.env.REACT_APP_BACKEND_URI}/singup`;
+  const URL = `${process.env.REACT_APP_BACKEND_URI}/account/signup`;
 
   //function to handle the change in the textboxes
   const handleChange = (e) => {
@@ -30,7 +29,7 @@ const SignUp = () => {
       [e.target.name]: value,
     });
   };
-  //function to handle cnahge in checkbox
+  //function to handle change in checkbox
   const handleUpdateCheck = (e) => {
     const checked = e.target.checked;
     setProfileInput({
@@ -135,8 +134,7 @@ const SignUp = () => {
               label="Check to receive updates"
             />
           </Form.Group>
-
-          <Button variant="outline-dark" type="submit">
+          <Button variant="outline-dark" type="submit" onSubmit={handleSubmit}>
             Submit
           </Button>
         </Form>

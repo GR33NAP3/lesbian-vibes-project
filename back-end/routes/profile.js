@@ -16,7 +16,7 @@ router.get("/", getAllProfiles);
 router.get("/:id", getProfileById);
 
 //POST for creating profile
-router.post("/", createProfile);
+router.post("/signup", createProfile);
 
 //PUT updates profile
 router.put("/:id", updateProfileById);

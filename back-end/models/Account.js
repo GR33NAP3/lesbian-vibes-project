@@ -17,7 +17,7 @@ const AccountSchema = new mongoose.Schema({
   lastName: {
     type: String,
   },
-  birthday: {
+  age: {
     type: Number,
     allowNull: false,
   },

@@ -8,7 +8,7 @@ const {
 } = require("../controllers/account");
 
 //POST for creating profile
-router.post("/signup", createAccount);
+router.post("/", createAccount);
 
 //PUT updates profile
 router.put("/:id", updateAccountById);

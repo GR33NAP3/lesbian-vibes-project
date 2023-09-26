@@ -89,10 +89,10 @@ const SignUp = () => {
 
               <Form.Label></Form.Label>
               <Form.Control
-                type="date"
+                type="number"
                 onChange={handleChange}
-                name="birthday"
-                placeholder="Birthday"
+                name="age"
+                placeholder="Age"
               />
               <Form.Label>Profile Picture URL</Form.Label>
               <Form.Control

@@ -25,7 +25,7 @@ function Navigation() {
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/signUp">Sign Up</Nav.Link>
             <Nav.Link href="/profile">Profile</Nav.Link>
-            <Nav.Link href="/matches">Matches</Nav.Link>
+            {/* <Nav.Link href="/matches">Matches</Nav.Link> */}
             <Nav.Link href="/explore">Explore</Nav.Link>
           </Nav>
         </Container>
